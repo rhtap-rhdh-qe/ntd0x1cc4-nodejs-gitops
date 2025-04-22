@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: ntd0x1cc4-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: ntd0x1cc4-nodejs 
+  name: ntd0x1cc4-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: ntd0x1cc4-nodejs 
